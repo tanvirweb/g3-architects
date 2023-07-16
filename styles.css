@@ -7,6 +7,7 @@
 
 body {
     font-size: 1rem;
+    color: #727272;
 }
 
 .container {
@@ -111,6 +112,7 @@ main {
 .features-wrap {
     gap: 50px;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .feature-images {
@@ -135,6 +137,58 @@ main {
     display: block;
 }
 
+/* Services Styles */
+.services-wrap {
+    gap: 15%;
+    align-items: center;
+}
+
+.services-content {
+    width: 40%;
+}
+
+.services-img {
+    width: 45%;
+}
+
+.services-content h2 {
+    max-width: 400px;
+    padding-left: 20px;
+    border-left: 3px solid #FF900E;
+}
+
+.services-content .box {
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.services-content .box h3 {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.services-img p {
+    max-width: 280px;
+    background-color: #FF900E;
+    color: #FFF;
+    padding: 50px 30px;
+    border-radius: 8px;
+    margin-top: -120px;
+    margin-left: -100px;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+}
+
+.services-img p span {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .flex-dir-col {
@@ -147,9 +201,11 @@ main {
     }
 
     .feature-images,
-    .feature-content {
+    .feature-content,
+    .services-content,
+    .services-img {
         width: 100%;
-    }
+    } 
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
